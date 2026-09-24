@@ -199,6 +199,10 @@ export type AccountStore = {
   signerUnreachableDialogInfo: ConfirmDialogInfo | undefined,
 
   resetReactionStates: boolean,
+  translationProvider: 'libretranslate' | 'deepl' | 'google',
+  translationApiKey: string,
+  translationLibreUrl: string,
+  preferredLanguage: string,
 }
 
 let relaysExplicitlyClosed: string[] = [];
@@ -273,6 +277,10 @@ export const initAccountStore: AccountStore = {
   resetReactionStates: false,
   // @ts-ignore
   // relayPool: new SimplePool({ enablePing: true, enableReconnect: true }),
+  translationProvider: 'libretranslate',
+  translationApiKey: '',
+  translationLibreUrl: 'https://libretranslate.de',
+  preferredLanguage: 'en',
 };
 
   export const getRelayUrls = () => Object.keys(accountStore.relaySettings || {}).map(utils.normalizeURL)

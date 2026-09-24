@@ -2327,6 +2327,38 @@ export const settings = {
       },
     },
   },
+  translation: {
+    title: {
+      id: 'settings.translation.title',
+      defaultMessage: 'Translation',
+      description: 'Title of the translation settings sub-page',
+    },
+    provider: {
+      id: 'settings.translation.provider',
+      defaultMessage: 'Translation Provider',
+      description: 'Label for the translation provider dropdown',
+    },
+    apiKey: {
+      id: 'settings.translation.apiKey',
+      defaultMessage: 'API Key',
+      description: 'Label for the translation API key input',
+    },
+    libreUrl: {
+      id: 'settings.translation.libreUrl',
+      defaultMessage: 'LibreTranslate URL',
+      description: 'Label for the LibreTranslate URL input (only visible when provider is LibreTranslate)',
+    },
+    preferredLanguage: {
+      id: 'settings.translation.preferredLanguage',
+      defaultMessage: 'Preferred Language',
+      description: 'Label for the preferred language dropdown',
+    },
+    save: {
+      id: 'settings.translation.save',
+      defaultMessage: 'Save',
+      description: 'Label for the save button in translation settings',
+    },
+  },
 };
 
 export const scopeDescriptors: Record<string, ScopeDescriptor> = {
