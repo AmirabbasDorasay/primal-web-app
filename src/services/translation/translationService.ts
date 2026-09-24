@@ -140,7 +140,7 @@ export class TranslationService {
         'Authorization': `DeepL-Auth-Key ${this.settings.apiKey}`,
         'Content-Type': 'application/x-www-form-urlencoded',
       },
-      body: params.toString(),
+      body: params,
     });
 
     if (!response.ok) {

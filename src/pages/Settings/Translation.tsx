@@ -47,7 +47,6 @@ const Translation: Component = () => {
           >
             <option value="libretranslate">LibreTranslate</option>
             <option value="deepl">DeepL</option>
-            <option value="google">Google (Placeholder)</option>
           </Select>
         </div>
 
